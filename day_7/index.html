@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Complete Form Example</title>
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+
+<body>
+    <form action="/submit" method="post">
+        <h2>User Registration Form</h2>
+        <!-- Text input with autofocus and required -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="username" required autofocus><br><br>
+
+        <!-- Password input with required -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="userpass" required><br><br>
+
+        <!-- Email input with required -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="useremail" required><br><br>
+
+        <!-- Phone input with pattern -->
+        <label for="phone">Phone (10 digits):</label>
+        <input type="text" id="phone" name="userphone" pattern="[0-9]{10}" title="Enter exactly 10 digits"
+            required><br><br>
+
+        <!-- Radio buttons -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkbox -->
+        <p>Interests:</p>
+        <input type="checkbox" id="sports" name="interest" value="Sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interest" value="Music">
+        <label for="music">Music</label><br><br>
+
+        <!-- Dropdown (select) -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="usermessage" rows="4" cols="40"
+            placeholder="Write your message here..."></textarea><br><br>
+
+        <!-- File upload -->
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="userfile"><br><br>
+
+        <!-- Submit and Reset buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>

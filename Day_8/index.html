@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Block vs Inline Elements</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      margin-top: 30px;
+    }
+
+    /* Block Elements Style */
+    .block {
+      background-color: lightblue;
+      border: 2px solid blue;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    /* Inline Elements Style */
+    .inline {
+      background-color: lightgreen;
+      border: 2px solid green;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    .section-title {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Block vs Inline Elements</h1>
+
+  <!-- BLOCK ELEMENTS -->
+  <div class="section-title">
+    Block Elements
+  </div>
+
+  <div class="container">
+
+    <div class="block">This is a &lt;div&gt; element</div>
+
+    <p class="block">
+      This is a &lt;p&gt; paragraph element
+    </p>
+
+    <section class="block">
+      This is a &lt;section&gt; element
+    </section>
+
+    <article class="block">
+      This is an &lt;article&gt; element
+    </article>
+
+  </div>
+
+
+
+  <!-- INLINE ELEMENTS -->
+  <div class="section-title">
+    Inline Elements
+  </div>
+
+  <div class="container">
+
+    <span class="inline">SPAN</span>
+
+    <a href="#" class="inline">LINK</a>
+
+    <strong class="inline">STRONG</strong>
+
+    <em class="inline">EM</em>
+
+    <label class="inline">LABEL</label>
+
+  </div>
+
+</body>
+</html>
