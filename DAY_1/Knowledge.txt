@@ -1,7 +1,17 @@
 
 Client  
-
+  ↕️
 Browser
-
+  ↕️
 Server
+
+
+HTML = skaleton
+css = beauty
+JavaScript  = Brain
+
+
+
+
+
 
