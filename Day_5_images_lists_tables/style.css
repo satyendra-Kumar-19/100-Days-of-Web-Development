@@ -1,6 +1,25 @@
-body{
+body {
     background-color: rgb(189, 119, 34);
 }
 
+td {
+    border: 2px solid black;
+
+}
+
+ul {
+    list-style-type: none;
+    /* removes default disc bullets */
+    padding-left: 0;
+    /* optional: aligns items neatly */
+}
+
+/*   you can check with this and also without this. */
 
 
+
+ul.sat li::before {
+    content: "👉 ";
+    /* adds emoji before each item */
+    color: orange;
+}
