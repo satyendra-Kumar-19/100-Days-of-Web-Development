@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic form template</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Personal Information</legend>
+        This is a basic template can be used when necessary.
+        <!-- inputs here -->
+    </fieldset>
+
+    <form action="/submit" method="post">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="username" placeholder="Enter the name" required>
+    </div>
+    <div>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </div>
+
+    </form>
+
+</body>
+
+</html>

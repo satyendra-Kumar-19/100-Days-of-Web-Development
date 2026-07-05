@@ -1,0 +1,23 @@
+### 🌐 Core Web Vitals
+- **Definition:** A set of metrics defined by Google to measure real‑world user experience on websites.  
+- **Main Metrics:**
+
+  - **Largest Contentful Paint (LCP):** Loading speed (should be ≤ 2.5s).  
+  - **First Input Delay (FID):** Interactivity (should be ≤ 100ms).  
+  - **Cumulative Layout Shift (CLS):** Visual stability (should be ≤ 0.1). 
+
+- **Purpose:** Helps developers optimize performance, usability, and accessibility for better SEO and user satisfaction.
+
+
+
+### 🚀 Lighthouse (Chrome Feature)
+- **Definition:** An open‑source tool built into Chrome DevTools for auditing web pages.  
+- **Features:**
+  - Tests **performance, accessibility, SEO, best practices, and PWA readiness**.  
+  - Generates a detailed **report with scores** and improvement suggestions.  
+- **Usage:** Open Chrome DevTools → “Lighthouse” tab → Run audit → Get actionable insights to improve your site.
+
+---
+
+👉 In short: **Core Web Vitals** are the key metrics Google uses to judge user experience, while **Lighthouse** is the developer tool in Chrome that helps you measure and improve those metrics.  
+
