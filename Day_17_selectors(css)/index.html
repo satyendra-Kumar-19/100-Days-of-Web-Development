@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Demo</title>
+
+    <style>
+        /* ===================================================
+           1. Universal Selector (*)
+           Selects every element.
+        =================================================== */
+
+        * {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /* ===================================================
+           2. Element Selector
+           Selects all <h1> elements.
+        =================================================== */
+
+        h1 {
+            color: darkblue;
+        }
+
+
+        /* ===================================================
+           3. ID Selector (#)
+           Selects only one element with id="main-title"
+        =================================================== */
+
+        #main-title {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+
+        /* ===================================================
+           4. Class Selector (.)
+           Selects every element having class="box"
+        =================================================== */
+
+        .box {
+            background: lightyellow;
+            padding: 15px;
+            margin: 15px;
+            border: 2px solid orange;
+        }
+
+        
+
+        /* ===================================================
+           5. Group Selector (,)
+           Styles h2 and h3 together.
+        =================================================== */
+
+        h2,
+        h3 {
+            color: darkgreen;
+        }
+
+
+        /* ===================================================
+           6. Descendant Selector (space)
+           Selects every <p> inside .container
+        =================================================== */
+
+        .container p {
+            color: blue;
+        }
+
+
+        /* ===================================================
+           7. Child Selector (>)
+           Selects only direct child paragraphs.
+        =================================================== */
+
+        .parent>p {
+            color: crimson;
+            font-weight: bold;
+        }
+
+
+        /* ===================================================
+           8. Adjacent Sibling Selector (+)
+           Selects first <p> immediately after h2.
+        =================================================== */
+
+        h2+p {
+            background: lightgreen;
+        }
+
+
+        /* ===================================================
+           9. General Sibling Selector (~)
+           Selects all paragraphs after h3.
+        =================================================== */
+
+        h3~p {
+            color: purple;
+        }
+
+
+        /* ===================================================
+           10. Attribute Selector
+           Selects inputs with type="text"
+        =================================================== */
+
+        input[type="text"] {
+            border: 2px solid blue;
+            padding: 5px;
+        }
+
+
+        /* ===================================================
+           11. Hover Selector
+        =================================================== */
+
+        button:hover {
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+
+
+        /* ===================================================
+           12. Focus Selector
+        =================================================== */
+
+        input:focus {
+            background: lightyellow;
+        }
+
+
+        /* ===================================================
+           13. First Child
+        =================================================== */
+
+        ul li:first-child {
+            color: red;
+        }
+
+
+        /* ===================================================
+           14. Last Child
+        =================================================== */
+
+        ul li:last-child {
+            color: blue;
+        }
+
+
+        /* ===================================================
+           15. nth-child()
+        =================================================== */
+
+        ul li:nth-child(3) {
+            background: gold;
+        }
+
+
+        /* ===================================================
+           16. Even Child
+        =================================================== */
+
+        ul li:nth-child(even) {
+            font-weight: bold;
+        }
+
+
+        /* ===================================================
+           17. Odd Child
+        =================================================== */
+
+        ul li:nth-child(odd) {
+            font-style: italic;
+        }
+
+
+        /* ===================================================
+           18. Not Selector
+        =================================================== */
+
+        p:not(.special) {
+            margin-bottom: 10px;
+        }
+
+
+        /* ===================================================
+           19. Before
+        =================================================== */
+
+        .before::before {
+            content: "👉 ";
+        }
+
+
+        /* ===================================================
+           20. After
+        =================================================== */
+
+        .after::after {
+            content: " ✔";
+            color: green;
+        }
+
+
+        /* ===================================================
+           21. First Letter
+        =================================================== */
+
+        .letter::first-letter {
+            font-size: 40px;
+            color: red;
+        }
+
+
+        /* ===================================================
+           22. First Line
+        =================================================== */
+
+        .line::first-line {
+            font-weight: bold;
+        }
+
+
+        /* ===================================================
+           23. Selection
+        =================================================== */
+
+        ::selection {
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="main-title">CSS Selectors Demonstration</h1>
+
+    <hr>
+
+    <div class="box">
+        <h2>Element, ID and Class Selector</h2>
+        <p>This paragraph is inside .box.</p>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h2>Descendant Selector</h2>
+
+        <p>This paragraph is inside container.</p>
+
+        <div>
+            <p>This nested paragraph is also selected.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="parent">
+
+        <p>Direct child paragraph</p>
+
+        <div>
+            <p>Nested paragraph (Not selected by child selector)</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2>Adjacent Sibling Example</h2>
+
+    <p>This paragraph is selected by h2 + p</p>
+
+    <p>This paragraph is NOT.</p>
+
+    <hr>
+
+    <h3>General Sibling Example</h3>
+
+    <div>Some div</div>
+
+    <p>Paragraph One</p>
+
+    <p>Paragraph Two</p>
+
+    <p>Paragraph Three</p>
+
+    <hr>
+
+    <h2>Attribute Selector</h2>
+
+    <input type="text" placeholder="Text Input">
+
+    <br><br>
+
+    <input type="password" placeholder="Password">
+
+    <hr>
+
+    <button>Hover Over Me</button>
+
+    <hr>
+
+    <h2>Pseudo Classes</h2>
+
+    <ul>
+
+        <li>Apple</li>
+
+        <li>Banana</li>
+
+        <li>Mango</li>
+
+        <li>Orange</li>
+
+        <li>Grapes</li>
+
+    </ul>
+
+    <hr>
+
+    <p class="special">This paragraph has class "special".</p>
+
+    <p>This paragraph uses :not().</p>
+
+    <hr>
+
+    <p class="before">Before Pseudo Element</p>
+
+    <p class="after">After Pseudo Element</p>
+
+    <hr>
+
+    <p class="letter">
+        The first letter of this paragraph becomes large.
+    </p>
+
+    <hr>
+
+    <p class="line">
+        This paragraph demonstrates the first-line selector.
+        Resize your browser window to see how only the first
+        visible line remains bold while the remaining lines
+        retain the normal font weight.
+    </p>
+
+
+</body>
+
+</html>

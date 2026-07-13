@@ -1,0 +1,26 @@
+This example covers:
+
+
+1. Universal Selector (*)
+2. Element Selector
+3. ID Selector (#)
+4. Class Selector (.)
+5. Group Selector (,)
+6. Descendant Selector (space)
+7. Child Selector (>)
+8. Adjacent Sibling Selector (+)
+9. General Sibling Selector (~)
+10. Attribute Selector ([attribute])
+11. :hover
+12. :focus
+13. :first-child
+14. :last-child
+15. :nth-child()
+16. :nth-child(even)
+17. :nth-child(odd)
+18. :not()
+19. ::before
+20. ::after
+21. ::first-letter
+22. ::first-line
+23. ::selection
