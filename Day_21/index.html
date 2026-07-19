@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Specificity</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <link rel="stylesheet" href="st.css">
+    <!-- <style>
+        * {
+            padding: 0;
+            margin: 0;
+            background-color: #ff8fab;
+        }
+
+        :root {
+            color: blueviolet;
+        }
+
+        pre {
+            min-height: auto;
+            height: 40vh;
+            margin: auto;
+            color: #edede9;
+            background-color: black;
+        }
+
+        code{
+            color: #edede9;
+            background-color: black;
+        }
+    </style> -->
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ff8fab;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+pre {
+    background: #282c34;
+    color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    overflow-x: auto;
+    width: 80vw;
+
+    margin: 10px auto;
+}
+
+code {
+    background: transparent;
+    color: inherit;
+    font-family: Consolas, monospace;
+    font-size: 16px;
+}
+    </style>
 </head>
+
 <body>
-          <h1>Specificity in css</h1>
-          
+    <h1>Specificity in css</h1>
+    <pre>
+        <code>
+!important
+    ↓
+Inline Style
+    ↓
+ID (#)
+    ↓
+Class (.) = Attribute ([]) = Pseudo-class (:) = :root
+    ↓
+Element (div, p, h1, html)
+    ↓
+Universal (*)
+    </code>
+    </pre>
+
 </body>
+
 </html>

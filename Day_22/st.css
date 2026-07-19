@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ff8fab;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+pre {
+    background: #282c34;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+code {
+    background: transparent;
+    color: inherit;
+    font-family: Consolas, monospace;
+    font-size: 16px;
+}
