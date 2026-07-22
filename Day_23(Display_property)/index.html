@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Display_property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            width: 80vw;
+            padding: 20px;
+            background-color: bisque;
+            color: red;
+            border-radius: 20px;
+            align-items: center;
+            justify-content:center;
+            margin: 20px auto;
+
+        }
+        .box {
+            border: 5px solid blueviolet;
+            width: 40px;
+            margin: 10px auto;
+            align-items: center;
+            justify-content: center;
+            display: inline-block;
+            /* display: flex; */
+            padding: 30px;
+            /* display: grid; */
+
+        }
+
+        /* Try the below both properties one by one. */
+        .box1{
+            /* display: none; */
+            /* visibility: hidden; */
+
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1>This website is for "Display Property</h1>
+
+    <div class="box box1">
+        I am a box.
+    </div>
+    <div class="box">
+        I am a another box.
+    </div>
+
+
 </body>
+
 </html>
