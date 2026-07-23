@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something Different</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #6c757d;
+        }
+
+        h1 {
+            color: greenyellow;
+            background-color: #e0aaff;
+            text-shadow: 2px 3px 3px black;
+            width: 80vw;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+
+        nav ul {
+            width: 40vw;
+            display: flex;
+            list-style-type: none;
+            /* remove default bullets */
+        }
+
+        nav ul li {
+            padding: 20px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        nav ul li::before {
+            content: "❤️";
+                /* content: url("heart.png"); replace with your image path */
+            margin-right: 8px;
+            /* spacing between emoji and text */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This website is about list for navigation bar </h1>
+
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>contact</li>
+            <li>about</li>
+        </ul>
+    </nav>
+</body>
+
+</html>
