@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: black;
+}
+
+
+
+h1 {
+    margin: 20px;
+    color: aqua;
+    background-color: rgb(148, 87, 12);
+    border: 3px solid black
+}
+
+.container {
+    width: 350px;
+    height: 500px;
+    background-color: rgb(195, 207, 218);
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.box {
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.btn {
+    background-color: rgb(242, 242, 243);
+    border: 0.5px solid black;
+    padding: 2px;
+    margin: 10px;
+    border-radius: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.bt {
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: rgb(33, 104, 255);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(124, 153, 180);
+    font-weight: 720;
+}
+
+#img {
+    border-radius: 10px;
+    padding: 10px;
+    width: 280px;
+    height: 200px;
+    background-color: aliceblue;
+    background-image: url('img.jpg');
+    background-size: cover;
+    /* fills the div */
+    background-position: center;
+    /* centers the image */
+
+}
+
+.t1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin: 20px;
+    margin-left: 5px;
+}
+
+.t2 {
+    color: gray;
+}
+
+
+
+
+
+
+
+
+/* .container img {
+    max-width: 230px;
+    max-height: 250px;
+    /* width: auto; */
+/* height: auto; */
+/* } */
