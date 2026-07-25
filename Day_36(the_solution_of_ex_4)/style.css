@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffb3c1;
+}
+h1{
+    width: 80vw;
+    height: 50px;
+    background-color: aqua;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border:2px solid black;
+
+}
+
+.nav {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: left;
+    background-color: aliceblue;
+}
+.box {
+    padding: 0px 20px;
+    float: right;
+
+}
+.mode {
+    padding: 5px;
+    display: ;
+    float: left;
+    justify-content: left;
+    background-color: rgb(253, 96, 34);
+}

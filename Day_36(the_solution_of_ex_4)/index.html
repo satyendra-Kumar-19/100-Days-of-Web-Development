@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution of Ex-4</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="mode">
+            <label for="mode">Mode:</label>
+            <select id="mode" name="mode">
+                <option value="green">green</option>
+                <option value="red">red</option>
+                <option value="blue">blue</option>
+                <option value="yellow">yellow</option>
+                <option value="grey">grey</option>
+            </select>
+        </div>
+        <div class="box"><i class="fa-solid fa-house"></i> Home</div>
+        <div class="box"><i class="fa-solid fa-address-book" style="color: rgb(14, 192, 20);"></i> Contact</div>
+        <div class="box"><i class="fa-solid fa-circle-info" style="color: rgb(40, 55, 100);"></i> about</div>
+    </div>
+    <h1>Solution of Ex - 4 </h1>
+
+  <script>
+    // Get dropdown and navbar
+    const modeSelect = document.getElementById("mode");
+    const navbar = document.getElementById("navbar");
+
+    // Listen for changes
+    modeSelect.addEventListener("change", function () {
+      const selectedColor = modeSelect.value;
+      navbar.style.backgroundColor = selectedColor; // change nav bar color
+    });
+  </script>
+</body>
+
+</html>
