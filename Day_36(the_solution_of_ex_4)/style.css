@@ -6,6 +6,7 @@
 body{
     background-color: #ffb3c1;
 }
+
 h1{
     width: 80vw;
     height: 50px;
@@ -32,7 +33,7 @@ h1{
 }
 .mode {
     padding: 5px;
-    display: ;
+    display:flex;
     float: left;
     justify-content: left;
     background-color: rgb(253, 96, 34);
